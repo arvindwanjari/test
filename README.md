@@ -18,7 +18,7 @@ Open http://localhost:3000.
 ```sh
 npm run lint
 npm run build
-npm start
+python3 -m http.server 8000 --directory out
 ```
 
 ## Structure
@@ -31,7 +31,16 @@ npm start
 
 WhatsApp links to +91 9665007664. Gallery links to `/gallery`; Instagram remains inactive until its destination is supplied. Google Fonts load in the browser, with serif fallbacks offline. The logo preserves its original lettering.
 
-The homepage is prerendered by Next.js. No client-side state or JavaScript interaction is needed. Deployment configuration remains deferred.
+All pages are exported to `out` by Next.js. Preview the production export at http://localhost:8000 using the command above. `next start` is not used for static exports.
+
+## Render Static Site
+
+- Root Directory: leave blank.
+- Build Command: `npm ci && npm run build`.
+- Publish Directory: `out`.
+- Environment Variables: none required.
+
+Images are served directly without a Next.js image optimization server. Product data changes require a new build.
 
 ## Product gallery
 
