@@ -1,0 +1,16 @@
+{
+  "brand": "SMRIJA",
+  "marathi": "स्मृजा",
+  "tagline": "वीण आठवणींची.",
+  "colors": {
+    "maroon": "#7A1F27",
+    "olive": "#5E6B43",
+    "antique_gold": "#C8A97A",
+    "earth_brown": "#8B6E4E",
+    "sand_beige": "#F2E9DC"
+  },
+  "fonts": {
+    "marathi": "Noto Serif Devanagari / Mukta",
+    "english": "Cinzel / Lora"
+  }
+}
